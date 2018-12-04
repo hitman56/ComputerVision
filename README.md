@@ -4,6 +4,9 @@ This repository consists scripts for OCR (Optical Character Recognition) of whit
 ## Tools/Technologies Used:
 Python, OpenCV, Ocropus and Tesseract. 
 
+## Flowchart (How to use?)
+<img src='images/OCRFlow_v3.png'/>
+
 ### References
 
 1. Sharpening and Convolutions, OpenCv, https://www.pyimagesearch.com/2016/07/25/convolutions-with-opencv-and-python/
