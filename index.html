@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab|News+Cycle" rel="stylesheet">
+
+    <link rel="stylesheet" href="/ComputerVision/assets/css/style.css?v=0d1f81fa30c40ec9f0d11a9cd8652cf5cc8e81b5" media="screen" type="text/css">
+    <link rel="stylesheet" href="/ComputerVision/assets/css/print.css" media="print" type="text/css">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Computer Vision | ComputerVision</title>
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="Computer Vision" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This repository consists of scripts for OCR of white paper receipts. It includes Cropping (removing background), Improving Quality (if image is blurred), Binarization, Segmentation and Prediction." />
+<meta property="og:description" content="This repository consists of scripts for OCR of white paper receipts. It includes Cropping (removing background), Improving Quality (if image is blurred), Binarization, Segmentation and Prediction." />
+<link rel="canonical" href="https://newtein.github.io/ComputerVision/" />
+<meta property="og:url" content="https://newtein.github.io/ComputerVision/" />
+<meta property="og:site_name" content="ComputerVision" />
+<script type="application/ld+json">
+{"@type":"WebSite","url":"https://newtein.github.io/ComputerVision/","headline":"Computer Vision","name":"ComputerVision","description":"This repository consists of scripts for OCR of white paper receipts. It includes Cropping (removing background), Improving Quality (if image is blurred), Binarization, Segmentation and Prediction.","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<style>
+    html, body {
+    max-width: 100%;
+    margin: 0;
+    background: #fdf9f2 !important;
+    font-weight: 400;
+    font-family: Josefin Sans,sans-serif,arial,serif !important;
+    color:#000000 !important;
+      }
+      p{
+        font-weight:400 !important;
+        color:#000000 !important;
+        margin-top:2px;
+      }
+   
+       h2 {
+      width: 100%; 
+     border-bottom: 2px solid #ed5565; 
+     line-height: 1.5em;
+     margin: 5px 0px 10px 0px; 
+      }
+      h3 {
+      width: 100%; 
+     border-bottom: 2px solid #ed5565; 
+     line-height: 1em;
+     margin: 5px 0px 10px 0px; 
+      }
+      
+    </style>
+     <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	  
+   <script> 
+    $(function(){
+      $("#includedContentDiv").load("https://raw.githubusercontent.com/newtein/no_escape_search/master/tempfile.html"); 
+    });
+    </script> 
+  </head>
+
+  <body>
+    <header style="background-image:None;background-color:#ed5565;">
+      <div class="inner">
+        <a href="https://newtein.github.io/ComputerVision/">
+          <h1>OCR</h1>
+        </a>
+        <h2>Computer Vision</h2>
+        
+          <a href="https://github.com/newtein/ComputerVision" class="button"><small>View project on</small> GitHub</a>
+        
+        
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1 id="computer-vision">Computer Vision</h1>
+<p>This repository consists scripts for OCR (Optical Character Recognition) of white paper receipts. It includes Cropping (removing background), Improving Quality (if image is blurred), Binarization, Segmentation and Prediction.</p>
+
+<h2 id="toolstechnologies-used">Tools/Technologies Used:</h2>
+<p>Python, OpenCV, Ocropus and Tesseract.</p>
+
+<h2 id="flowchart-how-to-use">Flowchart (How to use?)</h2>
+<p><img src="images/OCRFlow_v3.png" /></p>
+
+<h3 id="references">References</h3>
+
+<ol>
+  <li>Sharpening and Convolutions, OpenCv, https://www.pyimagesearch.com/2016/07/25/convolutions-with-opencv-and-python/</li>
+  <li>Gaussian Sharpening, Theory, http://biomedpharmajournal.org/vol7no2/image-sharpening-by-gaussian-and-butterworth-high-pass-filter/</li>
+  <li>https://en.wikipedia.org/wiki/Unsharp_masking#Digital_unsharp_masking</li>
+  <li>Gaussian Sharpening, OpenCV, https://stackoverflow.com/a/4993701</li>
+  <li>Laplacian Sharpening Theory, http://www.idlcoyote.com/ip_tips/sharpen.html.</li>
+  <li>Laplacian, https://stackoverflow.com/questions/39619222/laplacian-sharpening-grey-image-as-result</li>
+  <li>Modified Laplacian, https://stackoverflow.com/a/51138416</li>
+  <li>Lossy Problem, https://stackoverflow.com/a/52442741</li>
+  <li>Google Vision, https://www.quora.com/How-does-Google-Vision-API-works</li>
+  <li>4-point transform algorithm, https://www.pyimagesearch.com/2014/08/25/4-point-opencv-getperspective-transform-example/</li>
+  <li>Document Scanner, https://www.pyimagesearch.com/2014/09/01/build-kick-ass-mobile-document-scanner-just-5-minutes/</li>
+  <li>Detect and Crop, https://www.quora.com/How-can-I-detect-an-object-from-static-image-and-crop-it-from-the-image-using-openCV</li>
+  <li>Crop a Contour, https://stackoverflow.com/questions/28759253/how-to-crop-the-internal-area-of-a-contour</li>
+  <li>Ocropus Part-A, http://www.danvk.org/2015/01/07/finding-blocks-of-text-in-an-image-using-python-opencv-and-numpy.html</li>
+  <li>Ocropus Part-B, https://www.danvk.org/2015/01/09/extracting-text-from-an-image-using-ocropus.html</li>
+  <li>Ocropus Part-C, http://www.danvk.org/2015/01/11/training-an-ocropus-ocr-model.html</li>
+</ol>
+
+
+        </section>
+         <aside id="sidebar">
+          <a href="#otherProjects"><h2 class="headB">   Internship Project  </h2> </a>
+
+
+          <h2> Self-Project </h2>
+          <p> Oct, 2018 - Dec, 2018 </p>
+
+          <h2> Domain </h2>
+          <p> Image Processing and Computer Vision <p>
+	 
+
+          <h2> Advisor </h2>
+          <p> <b> Mr. Arnab Sharma</b> <br/>
+            Data Engineer, Nyalazone Solutions Pvt Ltd <br/>
+             </p>
+           <h2 id="technologies-used">Tools/Technologies Used</h2>
+          <p> Python, Tesseract, Ocropus, OpenCV </p>
+          
+       
+     
+          <div id="includedContentDiv"></div>
+
+            <p class="repo-owner"><a href="https://github.com/newtein/ComputerVision">ComputerVision</a> is maintained by <a href="https://github.com/newtein">Harshit Gujral (newtein)</a>.</p>
+          
+
+           <script src="https://use.fontawesome.com/8b09d5ebcd.js"></script>
+    
+          <p> Made with <font color="#ed5565"> <i class="fa fa-heart" aria-hidden="true"></i> </font> by harshit</p>
+          
+       
+        </aside>
+
+      
+      </div>
+    </div>
+
+    
+  </body>
+</html>
